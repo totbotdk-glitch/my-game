@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="ballGrad" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#ffedd5" />
+      <stop offset="25%" stop-color="#fb923c" />
+      <stop offset="70%" stop-color="#ea580c" />
+      <stop offset="100%" stop-color="#9a3412" />
+    </radialGradient>
+    <radialGradient id="eyeHighlight" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#cbd5e1" />
+    </radialGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#000000" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <!-- Background circle badge -->
+  <rect width="512" height="512" rx="128" fill="#0f172a" />
+
+  <!-- Ball Body with Drop Shadow -->
+  <g filter="url(#shadow)">
+    <circle cx="256" cy="256" r="180" fill="url(#ballGrad)" stroke="#7c2d12" stroke-width="8" />
+
+    <!-- Headband / Hero Ribbon -->
+    <path d="M 80 230 Q 256 190 432 230 Q 430 270 256 230 Q 82 270 80 230 Z" fill="#2563eb" />
+    <polygon points="420,230 490,200 480,240 495,270 430,250" fill="#1d4ed8" />
+
+    <!-- Big Animated Eyes -->
+    <!-- Left Eye -->
+    <ellipse cx="210" cy="270" rx="30" ry="42" fill="url(#eyeHighlight)" stroke="#0f172a" stroke-width="5" />
+    <ellipse cx="216" cy="272" rx="16" ry="24" fill="#0f172a" />
+    <circle cx="222" cy="262" r="8" fill="#ffffff" />
+    <circle cx="212" cy="282" r="4" fill="#ffffff" />
+
+    <!-- Right Eye -->
+    <ellipse cx="302" cy="270" rx="30" ry="42" fill="url(#eyeHighlight)" stroke="#0f172a" stroke-width="5" />
+    <ellipse cx="296" cy="272" rx="16" ry="24" fill="#0f172a" />
+    <circle cx="302" cy="262" r="8" fill="#ffffff" />
+    <circle cx="292" cy="282" r="4" fill="#ffffff" />
+
+    <!-- Cheerful Hero Smile -->
+    <path d="M 225 330 Q 256 365 287 330" fill="none" stroke="#7c2d12" stroke-width="7" stroke-linecap="round" />
+    <!-- Rosy Cheeks -->
+    <ellipse cx="170" cy="315" rx="16" ry="10" fill="#f43f5e" opacity="0.6" />
+    <ellipse cx="342" cy="315" rx="16" ry="10" fill="#f43f5e" opacity="0.6" />
+
+    <!-- Glossy Highlight -->
+    <ellipse cx="200" cy="140" rx="60" ry="30" transform="rotate(-25 200 140)" fill="#ffffff" opacity="0.35" />
+  </g>
+</svg>
